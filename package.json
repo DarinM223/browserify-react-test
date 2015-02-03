@@ -11,6 +11,8 @@
     "react": "*"
   },
   "devDependencies": {
+    "6to5": "*",
+    "6to5ify": "*",
     "browserify": "*",
     "envify": "*",
     "reactify": "*",
@@ -19,6 +21,7 @@
   },
   "browserify": {
     "transform": [
+      "6to5ify",
       "reactify",
       "envify"
     ]
