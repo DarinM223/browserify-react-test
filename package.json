@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "CommonJS App testing",
   "scripts": {
-    "start": "./node_modules/watchify/bin/cmd.js ./app.js -o build/bundle.js -v -d"
+    "start": "./node_modules/watchify/bin/cmd.js -t [6to5ify --experimental] ./app.js -o build/bundle.js -v -d"
   },
   "author": "",
   "license": "ISC",
@@ -16,12 +16,11 @@
     "browserify": "*",
     "envify": "*",
     "reactify": "*",
-    "watchify": "*",
-    "uglify-js": "*"
+    "uglify-js": "*",
+    "watchify": "*"
   },
   "browserify": {
     "transform": [
-      "6to5ify",
       "reactify",
       "envify"
     ]

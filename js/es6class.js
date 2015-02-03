@@ -18,3 +18,13 @@ export class Dog extends Animal {
   }
 }
 
+export class Fox extends Animal {
+  constructor() {
+    console.log('Constructing a fox');
+  }
+
+  noise() {
+    console.log('What does the fox say?');
+  }
+}
+

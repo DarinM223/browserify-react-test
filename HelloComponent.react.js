@@ -1,13 +1,11 @@
 'use strict';
 
-var React = require('react');
+import React from 'react';
 
-var HelloComponent = React.createClass({
+export const HelloComponent = React.createClass({
   render: function() {
     return (
       <p>Hello world!</p>
     );
   }
 });
-
-module.exports = HelloComponent;
