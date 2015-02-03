@@ -1,0 +1,26 @@
+{
+  "name": "browserify-test",
+  "version": "1.0.0",
+  "description": "CommonJS App testing",
+  "scripts": {
+    "start": "./node_modules/watchify/bin/cmd.js ./app.js -o build/bundle.js -v -d"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "envify": "*",
+    "reactify": "*",
+    "watchify": "*",
+    "uglify-js": "*"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}
